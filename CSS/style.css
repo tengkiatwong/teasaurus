@@ -3,3 +3,21 @@
     font-weight: 400
     
 }
+
+.jumbotron {
+    background-image: url(/assets/jumbotron2.jpg);
+    height: 30em;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+.jumbotron-text {
+    color:white;
+    text-align: center;
+    
+}
+
+.jumbotron-button {
+    
+}
