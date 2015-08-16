@@ -3,6 +3,11 @@ $(".nav a").on("click", function(){
    $(this).parent().addClass("active");
 });
 
+$(".navbar-brand").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    
+});
+
 var myApp = angular.module('mvmt',['ngRoute']);
 
 myApp.config(function($routeProvider){
