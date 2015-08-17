@@ -8,6 +8,25 @@ $(".navbar-brand").on("click", function(){
     
 });
 
+
+var backgroundImages = ['/assets/jumbotron1.jpg','/assets/jumbotron2.jpg','/assets/logo.png'];
+var counter = 0;
+var changeBackground = function(){
+    
+    if (counter == backgroundImages.length){
+        counter = 0;
+    }
+    
+    $('#intro-banner').css('background-image',backgroundImages[counter]);
+    counter += 1;
+};
+
+$(document).ready(function(){
+   setInterval(changeBackground,100); 
+});
+
+
+
 var myApp = angular.module('mvmt',['ngRoute']);
 
 myApp.config(function($routeProvider){
@@ -43,7 +62,7 @@ myApp.config(function($routeProvider){
     })
     
     .when('/about',{
-        templateUrl:'/pages/about'
+        templateUrl:'/pages/about.html'
     })
 });
     
