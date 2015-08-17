@@ -11,9 +11,6 @@ $(".navbar-brand").on("click", function(){
 
 
 
-
-
-
 var myApp = angular.module('myApp',['ngRoute']);
 
 myApp.config(function($routeProvider){
@@ -37,8 +34,8 @@ myApp.config(function($routeProvider){
     })
     
     .when('/catalogue',{
-        templateUrl:'/pages/catalogue',
-        controller:'catalogueController'
+        templateUrl:'/pages/catalogue.html',
+        controller:'mainController'
     })
     
     .when('/Faq',{
@@ -47,9 +44,12 @@ myApp.config(function($routeProvider){
         
     })
     
-    .when('/about',{
-        templateUrl:'/pages/about.html'
+    .when('#/about',{
+        templateUrl:'/pages/about.html',
+        controller:'mainController'
     })
 });
     
-    
+ myApp.controller('mainController',function(){
+     
+ })   
