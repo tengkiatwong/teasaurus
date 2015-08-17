@@ -1,33 +1,20 @@
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
+    $(".navbar-collapse").collapse('hide');
 });
 
 $(".navbar-brand").on("click", function(){
     $(".nav").find(".active").removeClass("active");
-    
-});
-
-
-var backgroundImages = ['/assets/jumbotron1.jpg','/assets/jumbotron2.jpg','/assets/logo.png'];
-var counter = 0;
-var changeBackground = function(){
-    
-    if (counter == backgroundImages.length){
-        counter = 0;
-    }
-    
-    $('#intro-banner').css('background-image',backgroundImages[counter]);
-    counter += 1;
-};
-
-$(document).ready(function(){
-   setInterval(changeBackground,100); 
+    $(".navbar-collapse").collapse('hide');
 });
 
 
 
-var myApp = angular.module('mvmt',['ngRoute']);
+
+
+
+var myApp = angular.module('myApp',['ngRoute']);
 
 myApp.config(function($routeProvider){
     
@@ -35,7 +22,6 @@ myApp.config(function($routeProvider){
     
     .when('/',{
         templateUrl:'/pages/home.html',
-        controller:'mainController'
     })
     
     .when('/login',{
