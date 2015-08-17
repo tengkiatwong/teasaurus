@@ -44,7 +44,7 @@ myApp.config(function($routeProvider){
         
     })
     
-    .when('#/about',{
+    .when('/about',{
         templateUrl:'/pages/about.html',
         controller:'mainController'
     })
