@@ -11,6 +11,10 @@ $(".navbar-brand").on("click", function(){
 
 
 
+
+
+
+
 var myApp = angular.module('myApp',['ngRoute']);
 
 myApp.config(function($routeProvider){
