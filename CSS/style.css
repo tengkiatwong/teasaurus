@@ -100,4 +100,55 @@ body {
     text-align: center;  
 }
 
+#acontent1 {
+    background-color: white;
+    color: black;
+    padding-top: 4em;
+    text-align: center;
+    height: 10em;
+}
 
+.r2content1 {
+    background-color: #8EFF4E;
+    color:white;
+    height: 14em;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.r2content2 {
+    height: 11.7em;
+    font-size: 1.2em;
+    padding-top: 3em;
+    background-color: slategrey;
+    color:white;  
+}
+
+.contactBackground {
+    height:40em;
+    width: 40em;
+}
+
+.contactContent {
+    background-color: white;
+    padding: 2em 1em 1em 1em;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.contactText {
+    text-align: center;
+    padding-top: 1em;
+    
+}
+
+.gurantee {
+    width:10em;
+    height:10em;  
+}
+
+/*Catalogue page*/
+.all-items {
+    padding-top: 1em;
+}

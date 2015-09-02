@@ -14,8 +14,13 @@ $(".navbar-brand").on("click", function(){
 
 
 
-
 var myApp = angular.module('myApp',['ngRoute']);
+
+
+myApp.controller('catalogueCtrl',['$scope',function($scope){
+    
+}]);
+
 
 myApp.config(function($routeProvider){
     
@@ -39,7 +44,7 @@ myApp.config(function($routeProvider){
     
     .when('/catalogue',{
         templateUrl:'/pages/catalogue.html',
-        controller:'mainController'
+        controller:'catalogueCtrl'
     })
     
     .when('/Faq',{
@@ -50,6 +55,11 @@ myApp.config(function($routeProvider){
     
     .when('/about',{
         templateUrl:'/pages/about.html',
+        controller:'mainController'
+    })
+    
+    .when('/contact',{
+        templateUrl:'/pages/contact.html',
         controller:'mainController'
     })
 });
