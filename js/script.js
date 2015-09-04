@@ -9,11 +9,36 @@ $(".navbar-brand").on("click", function(){
     $(".navbar-collapse").collapse('hide');
 });
 
+//Login Page Javascript
+
+$(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
 
 
 
 
 
+
+
+
+
+//Angular code
 var myApp = angular.module('myApp',['ngRoute']);
 
 
@@ -32,8 +57,14 @@ myApp.config(function($routeProvider){
     
     .when('/login',{
         templateUrl:'/pages/login.html',
-        controller:'loginController'
+        controller:'mainController'
         
+    })
+    
+    .when('/register',{
+        templateUrl:'/pages/register.html',
+        controller:'mainController'
+    
     })
     
     .when('/help',{

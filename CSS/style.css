@@ -1,5 +1,6 @@
 body {
-    padding: 10px;
+    padding: 12px;
+    padding-top: 50px;
 }
 
 .navbar{
@@ -7,6 +8,20 @@ body {
     font-weight: 400;
     margin: 0;
     
+}
+
+.footer-bar {
+    background-color: white;
+    padding-left: 48%;
+}
+
+.footer-social {
+    
+}
+
+.footer-brand {
+    text-align: center;
+    padding-top: 0em;
 }
 
 #intro-banner {
@@ -97,7 +112,7 @@ body {
 }
 
 .logo-bottom {
-    text-align: center;  
+    text-align: center;
 }
 
 #acontent1 {

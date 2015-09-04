@@ -1,4 +1,4 @@
-<div id="Carousel" class="carousel slide">
+<div id="Carousel" class="carousel slide img-responsive">
 <ol class="carousel-indicators">
     <li data-target="Carousel" data-slide-to="0" class="active"></li>
     <li data-target="Carousel" data-slide-to="1"></li>
@@ -7,16 +7,16 @@
 <div class="carousel-inner">
 <div class="carousel-inner">
     
-    <!--Carsousel images must fit 1260x600 -->
+    <!--Carsousel images must fit 1900x700 -->
     <!--Add new items on the carousel here! -->
-    <div class="item active">
-        <img src="http://placehold.it/1260x500" class="img-responsive">
+    <div class="item active img-responsive">
+        <img src="http://placehold.it/1900x700" class="img-responsive">
     </div>
     <div class="item">
-        <img src="http://placehold.it/1260x500" class="img-responsive">
+        <img src="http://placehold.it/1900x700" class="img-responsive">
     </div>
     <div class="item">
-        <img src="http://placehold.it/1260x500" class="img-responsive">
+        <img src="http://placehold.it/1900x700" class="img-responsive">
     </div>
 </div>
 <span class="left carousel-control" data-target="#Carousel" data-slide="prev">
@@ -117,6 +117,60 @@
 
 </div>
 
+<!-- order form -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span>Order Now</legend>
+            <address>
+                <strong>How to order</strong><br>
+                Write the form as follows:<br>
+                Name<br>
+                address<br>
+                Contact number<br>
+                order and quantity<br>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 
