@@ -45,19 +45,14 @@
               </ul>
                 
               <ul class="nav navbar-nav navbar-right">
-                  
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+
                     <li>
-                        <a div data-toggle="modal" data-target="#myModal">FAQ
-                        </a>
-                      </li>
-                    <li><a href="#/contact">Contact us</a></li>
-                  </ul>
-                </li>
-                  
-                  <li><a href="#/login">Login</a></li>
+                        <a data-toggle="modal" data-target="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#contact">Contact us</a>
+                    </li>
+
                   
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -81,11 +76,11 @@
         </div>
 
         
-
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- FAQ Popup -->
+        <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header modal-primary">
+      <div class="modal-header modal-green">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Teasaurus FAQ</h4>
       </div>
@@ -115,8 +110,38 @@
   </div>
 </div>
         </div>
+
+<!-- END OF FAQ POPUP -->        
+
+<!-- CONTACT FORM -->
         
-        
+   <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-blue">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact us</h4>
+      </div>
+      <div class="modal-body"> 
+          <!-- Do not change the code! -->
+<a id="foxyform_embed_link_711365" href="http://www.foxyform.com/"></a>
+<div style="align: center;">        
+<script type="text/javascript">
+(function(d, t){
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.src = "http://www.foxyform.com/js.php?id=711365&sec_hash=987afd47aba&width=400px";
+   s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+    </div> 
+<!-- Do not change the code! -->
+    </div>
+  </div>
+</div>
+        </div>    
+
+<!-- End of Contact form -->
         
         <script src="js/angular.min.js"></script>
         <script src="js/angular-route.min.js"></script>

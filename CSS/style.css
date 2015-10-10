@@ -168,9 +168,15 @@ body {
     padding-top: 1em;
 }
 
-.modal-primary {
+.modal-green {
     background-color: limegreen;
     color: white;
+}
+
+.modal-blue {
+    background-color: dodgerblue;
+    color:white;
+    
 }
 
 .faq {
