@@ -167,3 +167,13 @@ body {
 .all-items {
     padding-top: 1em;
 }
+
+.modal-primary {
+    background-color: limegreen;
+    color: white;
+}
+
+.faq {
+    font-size: 14px;
+    
+}
