@@ -17,7 +17,15 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
+        <script src="js/simpleCart/simpleCart.min.js"></script>
+        <script type="text/javascript">
+            simpleCart.checkoutTo = PayPal;
+            simpleCart.email = "tengkiatwong@gmail.com";
+        </script>
     </head>
+    
+    
+    
     
     <body>
         <!-- navbar top -->
@@ -41,20 +49,21 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav left">
                 <li><a href="#/about">About Us</a></li>
-                <li><a href="#/catalogue">Catalogue</a></li>  
+                <li><a href="#/catalogue">Catalogue</a></li>
+                <li>
+                        <a data-toggle="modal" data-target="#faq">FAQ</a>
+                </li>
+                <li>
+                        <a data-toggle="modal" data-target="#contact">Contact us</a>
+                </li>
               </ul>
                 
-              <ul class="nav navbar-nav navbar-right">
-
-                    <li>
-                        <a data-toggle="modal" data-target="#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a data-toggle="modal" data-target="#contact">Contact us</a>
-                    </li>
-
-                  
+             <!--navbar right-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/cart">Cart</a></li>
               </ul>
+            <!--end navbar right-->    
+                
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
